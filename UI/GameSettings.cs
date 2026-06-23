@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-// $G$ CSS-999 (-3) Class that inherit from Form - should be named with Form at the beginning.
-
 namespace UI
 {
     public partial class GameSettings : Form
@@ -23,7 +21,6 @@ namespace UI
         private void buttonStart_Click(object sender, EventArgs e)
         {
             Hide();
-            // $G$ DSN-999 (-5) You shouldn't create and show the GameBoard From through the Settings From.
             GameWindow GameWindow = new GameWindow(textBoxPlayerOneName.Text, textBoxPlayerTwoName.Text, (int)numericUpDownNumOfRows.Value, (int)numericUpDownNumOfCols.Value, checkBoxPlayerTwoName.Checked);
             GameWindow.ShowDialog();
         }

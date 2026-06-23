@@ -127,7 +127,6 @@ namespace UI
                 checkedIfToEnableButton(buttonSender);
             }
 
-            // $G$ DSN-999 (-5) the ui should not know what is AI - the game manger in the logic section should use ai in computer turns.
             if (!r_PlayerTwoIsHuman)
             {
                 int computerPos = r_GameLogic.ChooseRandomlyColForComputerTurn();

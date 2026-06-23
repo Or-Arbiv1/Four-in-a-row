@@ -107,7 +107,7 @@ namespace Logic
 
                 for (int j = 1; j < i_Board.Row; j++)
                 {
-                    if (i_Board.Matrix[j, i].Symbol == r_Chip.Symbol && i_Board.Matrix[j - 1, i - 1].Symbol == ' ' && i_Board.Matrix[j - 1, i - 1].Symbol != ' ')
+                    if (i_Board.Matrix[j, i].Symbol == r_Chip.Symbol && i_Board.Matrix[j - 1, i - 1].Symbol == ' ')
                     {
                         smartMove = i - 1;
                         break;
